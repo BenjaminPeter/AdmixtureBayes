@@ -1,8 +1,8 @@
 from numpy import random
 from math import exp, log
-from Rtree_operations import scale_tree_copy
-
 from multiprocessing import Queue, Process
+
+from .Rtree_operations import scale_tree_copy
 
 class basic_chain_class_as_process(object):
     

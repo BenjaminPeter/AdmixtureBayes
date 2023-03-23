@@ -1,9 +1,10 @@
 from pathos.multiprocessing import freeze_support
 import pandas as pd
-from MCMC import basic_chain_pool
 from numpy.random import choice, random
 from math import exp
 from itertools import chain
+
+from .MCMC import basic_chain_pool
 
 def MCMCMC(starting_trees,    posterior_function, summaries, temperature_scheme,  printing_schemes, 
            iteration_scheme,  proposal_scheme, n_arg, verboseee,

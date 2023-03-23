@@ -1,17 +1,17 @@
 from argparse import ArgumentParser, SUPPRESS
 
-import construct_starting_trees_choices
-from construct_covariance_choices import get_covariance, estimate_degrees_of_freedom_scaled_fast
-from posterior import posterior_class
-from MCMCMC import MCMCMC
+import admixturebayes.construct_starting_trees_choices
+from .construct_covariance_choices import get_covariance, estimate_degrees_of_freedom_scaled_fast
+from .posterior import posterior_class
+from .MCMCMC import MCMCMC
 import os
 from numpy import random
 import pandas
-from meta_proposal import simple_adaptive_proposal
+from .meta_proposal import simple_adaptive_proposal
 
-import Rtree_operations
-import tree_statistics
-import Rtree_to_covariance_matrix
+import admixturebayes.Rtree_operations
+import admixturebayes.tree_statistics
+import admixturebayes.Rtree_to_covariance_matrix
 from copy import deepcopy
 
 def removefile(filename):

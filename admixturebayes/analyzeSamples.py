@@ -3,10 +3,10 @@ from copy import deepcopy
 import sys
 import pandas as pd
 
-from tree_statistics import (identifier_to_tree_clean, generate_predefined_list_string, admixture_sorted_unique_identifier, unique_identifier_and_branch_lengths)
-from Rtree_to_covariance_matrix import leave_node, _thin_out_dic, Population, _add_to_waiting, get_populations
+from .tree_statistics import (identifier_to_tree_clean, generate_predefined_list_string, admixture_sorted_unique_identifier, unique_identifier_and_branch_lengths)
+from .Rtree_to_covariance_matrix import leave_node, _thin_out_dic, Population, _add_to_waiting, get_populations
 
-from Rtree_operations import (get_leaf_keys, get_real_parents, get_real_children, rename_root, change_admixture, get_categories,
+from .Rtree_operations import (get_leaf_keys, get_real_parents, get_real_children, rename_root, change_admixture, get_categories,
                               screen_and_prune_one_in_one_out, remove_non_mixing_admixtures, node_is_non_admixture)
 
 

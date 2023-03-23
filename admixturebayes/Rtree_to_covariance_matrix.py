@@ -1,7 +1,7 @@
 from copy import deepcopy
 from numpy import zeros, ix_, outer
 
-from Rtree_operations import node_is_non_admixture, get_leaf_keys
+from .Rtree_operations import node_is_non_admixture, get_leaf_keys
 
 class Covariance_Matrix():
     

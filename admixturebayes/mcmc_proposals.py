@@ -1,6 +1,6 @@
 from numpy.random import choice, random, normal
 from copy import deepcopy
-from Rtree_operations import (node_is_admixture, insert_admixture_node_halfly,  find_rooted_nodes, get_number_of_leaves,
+from .Rtree_operations import (node_is_admixture, insert_admixture_node_halfly,  find_rooted_nodes, get_number_of_leaves,
                               graft, node_is_non_admixture, get_real_parents, move_node, get_number_of_admixes,
                               parent_is_spouse, halfbrother_is_uncle, get_parent_of_branch, update_specific_branch_lengths,
                               parent_is_sibling, other_branch, get_branch_length, change_admixture,
@@ -12,10 +12,10 @@ from random import getrandbits
 import warnings
 from math import sqrt
 from scipy.stats import chi2, uniform, expon
+from scipy.linalg import svd
 
 from numpy import zeros, insert
-from Rtree_to_covariance_matrix import Population, _add_to_waiting, _thin_out_dic
-from scipy.linalg import svd
+from .Rtree_to_covariance_matrix import Population, _add_to_waiting, _thin_out_dic
 
 def rescale(add, sigma=0.01, pks={}):
     new_add=add+normal()*sigma

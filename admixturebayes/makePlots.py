@@ -1,15 +1,15 @@
 from collections import Counter
 import pandas as pd
 from argparse import ArgumentParser
-from tree_statistics import generate_predefined_list_string, topological_identifier_to_tree_clean, identifier_to_tree
 from copy import deepcopy
-from Rtree_operations import node_is_admixture, rename_key, get_admixture_proportion_from_key, get_all_admixture_origins, to_networkx_format
-import sys
-
 from graphviz import Digraph
 import os
-
+import sys
 from math import floor
+
+from .tree_statistics import generate_predefined_list_string, topological_identifier_to_tree_clean, identifier_to_tree
+from .Rtree_operations import node_is_admixture, rename_key, get_admixture_proportion_from_key, get_all_admixture_origins, to_networkx_format
+
     
 class make_read_name(object):
     

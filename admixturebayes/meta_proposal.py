@@ -1,7 +1,8 @@
-from mcmc_proposals import addadmix_class, deladmix_class, sliding_regraft_class, rescale_class, rescale_admixtures_class, rescale_constrained_class, rescale_add_class
 from numpy.random import choice
-from Rtree_operations import get_number_of_admixes
 from math import exp
+
+from .mcmc_proposals import addadmix_class, deladmix_class, sliding_regraft_class, rescale_class, rescale_admixtures_class, rescale_constrained_class, rescale_add_class
+from .Rtree_operations import get_number_of_admixes
 
 class new_node_naming_policy(object):
     

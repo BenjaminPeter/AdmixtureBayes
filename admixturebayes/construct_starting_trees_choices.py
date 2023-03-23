@@ -1,12 +1,11 @@
-from tree_statistics import identifier_to_tree_clean, generate_predefined_list_string
-from Rtree_operations import rename_root, get_number_of_leaves
 from copy import deepcopy
-
 from numpy.random import choice
 from collections import Counter
 from scipy.stats import uniform, expon, geom
 
-from Rtree_operations import get_number_of_admixes, get_all_branch_lengths
+from .Rtree_operations import get_number_of_admixes, get_all_branch_lengths
+from .tree_statistics import identifier_to_tree_clean, generate_predefined_list_string
+from .Rtree_operations import rename_root, get_number_of_leaves
 
 class Summary(object):
        

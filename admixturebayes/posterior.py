@@ -1,12 +1,12 @@
 from numpy import loadtxt
-from Rtree_to_covariance_matrix import make_covariance
+from .Rtree_to_covariance_matrix import make_covariance
 from scipy.stats import wishart
 from numpy.linalg import LinAlgError
 
 from scipy.stats import geom
-from Rtree_operations import (get_all_branch_lengths, get_all_admixture_proportions, get_number_of_leaves)
+from .Rtree_operations import (get_all_branch_lengths, get_all_admixture_proportions, get_number_of_leaves)
 
-from Rtree_operations import get_number_of_admixes, get_number_of_leaves
+from .Rtree_operations import get_number_of_admixes, get_number_of_leaves
 from math import log
 
 class uniform_prior(object):

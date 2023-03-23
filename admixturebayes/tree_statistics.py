@@ -1,4 +1,4 @@
-from Rtree_operations import (get_categories, get_destination_of_lineages, propagate_married,
+from .Rtree_operations import (get_categories, get_destination_of_lineages, propagate_married,
                               propagate_admixtures, get_branch_length,update_parent_and_branch_length,
                               insert_children_in_tree, rename_root,
                               get_admixture_proportion,

@@ -3,10 +3,10 @@ from copy import deepcopy
 from numpy import insert, delete, ix_, dtype, loadtxt
 import subprocess
 import os
+import warnings
 
 from numpy import array, mean, zeros, diag, savetxt, nan, isnan, nanmean, identity, diag, log, outer, square
 from numpy import sum as npsum
-import warnings
 
 from numpy.random import choice
 from numpy.linalg import norm as npnorm

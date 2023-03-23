@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "admixturebayes"
+version = "0.0.0"
+description = "AdmixtureBayes is a program to generate, analyze, and plot posterior samples of admixture graphs (phylogenies incorporating admixture events) given an allele count file"
+authors = ["Andrew Vaughn <ahv36@berkeley.edu>"]
+license = "GPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+scipy = ">1.0.1"
+numpy = ">=1.0.0"
+pandas = ">=1.5"
+pathos =  ">=0.3.0"
+graphviz = ">=0.20.0"
+
+
+[build-system]
+requires = ["poetry-core",
+    "poetry-dynamic-versioning", 
+]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+bump = false
+pattern  = "^(?P<base>\\d+\\.\\d+\\.\\d+)(-?((?P<stage>[a-zA-Z]+)\\.?(?P<revision>\\d+)?))?"
+
+[tool.poetry.scripts]
+admixturebayes-runMCMC = 'admixturebayes:runMCMC'
+admixturebayes-analyzeSamples = 'admixturebayes:analyzeSamples'
+admixturebayes-makePlots = 'admixturebayes:makePlots'
